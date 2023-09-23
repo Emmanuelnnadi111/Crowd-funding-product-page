@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/all.css">
+  
+  <title>Frontend Mentor | Crowdfunding product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="p-0 m-0 box-border">
+  <div class="contain">
+      <div class="crowdfunding-container ">
+        <div class="heading ">
+           
+          <header class="crowdfunding-head relative">
+              <div class="nar-bar  flex  px-8  absolute top-6 sm:flex sm:justify-between">
+                <div class="justify sm:flex justify-between">
+                    <nav class="">
+                      <h1 class="text-white text-2xl font-bold relative sm:left-32">crowdfund</h1>
+                    </nav>
+                    <nav class="article hidden sm:block sm:items-end justify-items-end">
+                      <ul class="flex space-x-8 sm:relative  left-[310%] sm:text-white">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Get Started</a></li>
+                      </ul>
+                    </nav>
+                </div>
+                <button class="openBtn">
+                    <img class="text-white absolute left-80   top-3 sm:hidden open-menu " src="./images/icon-hamburger.svg" alt="">
+               
+                </button>
+                <button class="close-menu hidden">
+                         <img class=" close-menu items-center relative left-44 top-2 " src="./images/icon-close-menu.svg" alt="">
+                </button>
+              </div>
+              <!-- mobile-menu -->
+               <div class="mobile-menu w-80 p-6 border-2  bg-white rounded-2xl  z-10 top-20  left-6 fixed hidden sm:hidden">
+                    <ul class="text-black font-bold ">
+                        <li class="pb-8"><a href="#">About</a></li>
+                        <li class="pb-8"><a href="#">Discover</a></li>
+                        <li class="pb-5"><a href="#">Get Started</a></li>
+                    </ul>
+              </div>
+              <img class="sm:hidden" src="./images/image-hero-mobile.jpg" alt="">
+              <img class="hidden sm:block sm:w-full" src="./images/image-hero-desktop.jpg" alt="">
+             
+          </header>
+        </div>
+        <!-- End of header section -->
+        <div class="content-container">
+            <div class="first-content border-2 w-[90%] rounded-2xl m-auto relative bottom-20 bg-white h-80 sm:w-[60%]">
+                <img class="block m-auto relative bottom-6 " src="./images/logo-mastercraft.svg" alt="">
+                <h1 class="text-center font-bold text-black text-2xl mt-4 px-4">Mastercraft Bamboo Monitor Risere</h1>
+                <p class="text-center text-DarkGray  mt-4 px-2">A beautiful handcrafted monitor stand to reduce neck and eye strain.</p>
+                <div class="back-to-project flex justify-around mt-4 sm:mt-10">
+                    <button class="rounded-full bg-DarkCyan  px-16 text-white back-to-project">
+                        Back to project
+                    </button>
+                    <!-- complete -->
+                    <div class="complete fixed z-10 rounded-2xl w-[80%] m-auto border-2 bg-white bottom-60 pb-14 sm:w-[30%] hidden">
+                        <img class="block m-auto mt-8" src="./images/icon-check.svg" alt="">
+                        <h1 class="font-bold text-center mt-6 text-2xl">Thanks for your support!</h1>
+                       <p class="text-DarkGray text-center mt-6 px-6"> Your pledge brings us one step closer to sharing MasterCraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is complete.</p>
+                        <button class="completeBtn px-6 py-2 bg-DarkCyan rounded-full text-white font-bold block m-auto mt-8 ">
+                            Got it!
+                        </button>
+                    </div>
+                    <!-- modal-default -->
+                    <div class="back-to-project-wrap rounded-3xl bg-white fixed z-10 w-[90%] border-2 bottom-2 sm:w-[50%] sm:top-10 sm:h-[90%] hidden">
+                        <div class="back-to-project">
+                            <div class="wrap flex justify-between items-center mt-4 px-4">
+                                <h1 class="text-blacck font-bold text-2xl sm:px-16">Back this project</h1>
+                                <img class="close-modal" src="./images/icon-close-modal.svg" alt="">
+                            </div>
+                            <p class="text-DarkGray mt-4 px-4 sm:px-20">Want to support us in bringing MasterCraft Bamboo Monitor Riser out in the world?</p>
+                        </div>
+                        <div class="pledge-content rounded-2xl w-[80%] m-auto border-2 mt-2">
+                            <div class="pledge flex items-center space-x-3 mt-6 px-6">
+                                <div class="input">
+                                     <input type="radio" class="select items-center" id="select-pledge">
+                                </div>
+                        
+                                <a class="text-black font-bold hover:text-ModerateCyan" href="#">Pledge with no reward</a>
+                            </div>
+                            <p class="text-DarkGray px-6 pb-2">Choose to support us without a reward if you simply believe in our project. As a becker, you will be signed up up to receive products updates via email.</p>
+                          
+                        </div>
+                        <div class="bamboo-content border-2 rounded-2xl w-[80%] m-auto mt-4 ">
+                            <div class="bamboo flex items-center space-x-3 mt-4 px-6 ">
+                                <div class="input">
+                                    <label for="">
+                                         <input id="select-input" type="radio" value="" name="colored-radio" class=" text-teal-600 bg-gray-100 border-gray-300 focus:ring-teal-500 dark:focus:ring-teal-600 dark:ring-offset-gray-800 focus:ring-2 ">
+                                    </label>
+                                </div>
+                                <div class="group sm:flex sm:justify-around">
+                                    <div class="sm:flex space-x-3">
+                                        <a class="text-black font-bold hover:text-ModerateCyan" href="#">Bamboo stand</a>
+                                        <p class="text-ModerateCyan">Pledge $25 or more</p>
+                                    </div>
+                                    <div class="items-end">
+                                        <p class="hidden sm:block font-bold">101 <span class="text-DarkGray">left</span></p>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            <p class="text-DarkGray px-6 mt-4">You get an ergonomic stan made of natural bamboo. You have helped us launch our promotional campaign, and you will be added to a special Becker member list.</p>
+                            <p class="text-black font-bold px-6 mt-4 sm:hidden pb-2">101 <span class="text-DarkGray mt-4">left</span></p>
+                            <div class=" active-wrap hidden">
+                                <hr>
+                                <div class=" sm:flex justify-between items-center px-6 ">
+                                    <div class="active-article">
+                                        <p class="text-center mt-4">Enter your pledge</p>
+                                    </div>
+                                    <div class="active-button flex justify-between p-4 sm:block">
+                                        <button class="active-btn border-2 p-4 rounded-full px-8">
+                                            $ <span class="text-black font-bold">25</span>
+                                        </button>
+                                        <button class="continueBtn border-2 rounded-full text-white bg-DarkCyan p-4 px-6">
+                                            Continue
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                        <div class="black-edition rounded-2xl w-[80%] m-auto border-2 mt-6">
+                          <div class="black-edition flex space-x-3 items-center mt-4 px-6">
+                                <div class="input">
+                                    <input type="radio" class="select" id="select">
+                                </div>
+                              <div class="group sm:flex sm:justify-between space-x-3">
+                                    <h1 class="text-black font-bold">Black Edition stand</h1>
+                                    <p class="text-ModerateCyan">Pledge $75 or more</p>
+                                    <div>
+                                        <p class="hidden sm:block font-bold">64 <span class="text-DarkGray">left</span></p>
+                                    </div>
+                              </div>
+                          </div>
+                          <p class="px-6 text-DarkGray mt-4a">You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Becker member list. Shipping is included.</p>
+                          <p class="text-black font-bold px-6 mt-4 sm:hidden">64 <span class="text-DarkGray font-thin">left</span></p>
+                     </div>
+                                          
+                 <div class="mahogany-content rounded-2xl border-2 w-[80%] m-auto mt-6 opacity-50">
+                        <div class="mahogany flex items-center px-6 mt-4 space-x-3 ">
+                            <div class="input items-center">
+                                <input type="radio" class="select" id="select-mahogany">
+                            </div>
+                            <div class="group items-center sm:flex sm:items-end justify-between space-x-3">
+                                <h1 class="text-black font-bold">Mahogany Special Edition</h1>
+                                <p class="text-ModerateCyan">Pledge $200 or more</p>
+                                 <p class="font-bold hidden sm:block ">0 <span class="text-DarkGray">left</span></p>
+                            
+                            </div>
+                        </div>
+                        <p class="text-DarkGray mt-4 px-6">You get two Special Edition Mahogany stand, a Becker, T-shirt, and a personal thank you. You'll be added to our Becker member list. Shipping is included.</p>
+                        <p class="font-bold px-6 sm:hidden">0 <span class="text-DarkGray">left</span></p>
+                    </div>
+                    </div>
+                    <div class="bookmark sm:flex items-center">
+                        <img src="./images/icon-bookmark.svg" alt="">
+                        <a class="hidden sm:block p-4 border-0 rounded-l-none px-10 rounded-full bg-DarkGray opacity-40 text-black font-bold" href="">Bookmark</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of first-content -->
+            <div class="second-content w-[90%] border-2 rounded-2xl m-auto h-72 sm:w-[60%] sm:h-60 ">
+                <div class="number-info sm:grid grid-cols-3 mt-4 sm:mt-10">
+                    <div class="num1 text-center mt-2 sm:pl-14">
+                        <div class="vertical sm:flex">
+                            <div class="1 ">
+                                <h2 class="font-bold text-3xl">$89, 914</h2>
+                                <p class="text-DarkGray text-xs">of $100,000 backed</p>
+                            </div>
+                            <hr class="w-[35%] m-auto mt-4 sm:rotate-90  sm:mt-4">
+                        </div>
+                    </div>
+                    <div class="num2 text-center mt-4 ">
+                        <div class="vertical  sm:flex">
+                            <div class="1 ">
+                                <h2 class="font-bold text-3xl">5007</h2>
+                                <p class="text-DarkGray text-xs">total backers</p>
+                            </div>
+                            <hr class="w-[30%] m-auto mt-4 sm:rotate-90 sm:mt-4">
+                        </div>
+                    </div>
+                    <div class="num3 text-center mt-4 sm:relative md:right-60 lg:right-52">
+                        <h2 class="font-bold text-3xl">56</h2>
+                        <p class="text-DarkGray text-xs">days left</p>
+                    </div>  
+                </div>
+                  <div class="mt-4 space-remaining w-[90%] h-3  m-auto bg-stone-400  rounded-full sm:mt-14">
+                     <div class="bg-ModerateCyan w-[80%] h-3 rounded-full"></div>
+                  </div>
+            </div>
+            <!-- End of second-content -->
+            <div class="wrap bg-white rounded-2xl border-2 w-[90%] m-auto mt-6 h-full sm:w-[60%]">
+                <div class="third-content p-6">
+                    <h1 class="font-bold text-2xl mt-4 ">About this project</h1>
+                    <p class="text-DarkGray mt-4 ">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you to stay focused on the task at hand.</p>
+                    <p class="text-DarkGray mt-4">Featuring artisan craftmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens and USB sticks to be stored under the stand.</p>
+                </div>
+                <!-- End of third content -->
+                <div class="fourth-content rounded-2xl border-2 w-[90%] m-auto p-4 sm:w-[95%]">
+                    <div class="bamboo flex flex-col sm:flex-row justify-between">
+                        <h1 class="font-bold ">Bamboo stand</h1>
+                        <p class="text-ModerateCyan font-bold">Pledge $25 or more</p>
+                    </div>
+                    <p class="text-DarkGray mt-4">You get an ergonomic stan made of natural bamboo. You have helped us launch our promotional campaign, and you will be added to a special Becker member list.</p>
+                    <div class="select-reward sm:flex justify-between">
+                        <p class="font-bold text-2xl mt-4">101 <sup class="text-DarkGray mt-4 text-xs ">left</sup></p>
+                        <button class="mt-4 bg-ModerateCyan text-white rounded-full px-6 py-2 select-reward">Select Reward</button>
+                    </div>
+                </div>
+                <!-- End of fourth content  -->
+                <div class="firth-content rounded-2xl border-2 w-[90%] m-auto p-4 mt-4 mb-6 sm:w-[95%]">
+                  <div class="black-edition flex flex-col sm:flex-row justify-between">
+                      <h1 class="font-bold">Black Edition stand</h1>
+                      <p class="text-ModerateCyan font-bold">Pledge $75 or more</p>
+                  </div>
+                  <p class="text-DarkGray mt-4">You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Becker member list. Shipping is included.</p>
+                  <div class="select-reward sm:flex justify-between">
+                      <p class="font-bold text-2xl mt-4">64 <sup class="text-DarkGray mt-4 text-xs">left</sup></p>
+                      <button class="mt-4 bg-ModerateCyan text-white rounded-full px-6 py-2 select-reward">Select Reward</button>
+                  </div>
+                          </div>
+                          <!-- End of firth content  -->
+                <div class="last-content rounded-2xl border-2 w-[90%] m-auto p-4 disabled: sm:w-[95%] opacity-50 pointer-events-none">
+                    <div class="mahogany flex flex-col  sm:flex-row justify-between sm:w-[95%]">
+                        <h1 class="font-bold">Mahogany Special Edition</h1>
+                        <p class="text-ModerateCyan font-bold">Pledge $200 or more</p>
+                    </div>
+                    <p class="text-DarkGray mt-4">You get two Special Edition Mahogany stand, a Becker, T-shirt, and a personal thank you. You'll be added to our Becker member list. Shipping is included.</p>
+                    <div class="select-reward sm:flex justify-between">
+                        <p class="font-bold text-2xl mt-4">0 <sup class="text-DarkGray mt-4 text-xs">left</sup></p>
+                        <button class="mt-4 bg-DarkGray text-white rounded-full px-6 py-2 disabled:">Out of stock</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+     </div>
+
+  </div>
+
+ </div>
+
+<script src="script.js"></script>
+</body>
+</html>
