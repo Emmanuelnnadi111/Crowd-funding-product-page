@@ -11,6 +11,8 @@ const selectReward = document.querySelector(".select-reward");
 const mobileMenu = document.querySelector(".mobile-menu");
 const closeModal = document.querySelector(".close-modal");
 const selectInput = document.querySelector("#select-input");
+const closeBackdrop = document.querySelector(".cover-modal");
+const backtoprojectModal = document.querySelector(".backtoprojet-modal");
 
 openMenu.addEventListener("click", () => {
 	mobileMenu.classList.remove("hidden");
@@ -24,13 +26,15 @@ closeMenu.addEventListener("click", () => {
     closeMenu.classList.add("hidden");
 });
 
-backToProjectBtn.addEventListener("click", () => {
-    console.log(backToProjectPage.classList.remove("hidden"));
+backToProjectBtn.addEventListener("click", (e) => {
+    backtoprojectModal.classList.remove("hidden");
+    e.preventDefault()
 });
 
 closeModal.addEventListener("click", () => {
     const display = document.querySelector(".back-to-project-wrap ");
     display.style.display = "none";
+    backtoprojectModal.style.display = 'none';
 });
 
 selectInput.addEventListener("click", () => {
@@ -40,10 +44,12 @@ selectInput.addEventListener("click", () => {
 });
 
 continueBtn.addEventListener("click", () => {
-    complete.classList.remove("hidden");
+    closeBackdrop.classList.remove("hidden");
      document.querySelector(".back-to-project-wrap").style.display = "none";
 });
 
 completeBtn.addEventListener("click", () => {
     complete.classList.add('hidden');
+    closeBackdrop.classList.add('hidden');
+    backtoprojectModal.style.display = "none";
 });
